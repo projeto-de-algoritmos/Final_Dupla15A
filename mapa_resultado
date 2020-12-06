@@ -29,9 +29,8 @@ digraph mapa_resultado {
 	"Rio de Janeiro - RJ" -> "Vitoria - ES" [label=527 color=black constraint=false dir=none]
 	"Cuiaba - MT" -> "Posto - RJ/ES" [label=505 color=black constraint=false dir=none]
 	"Posto - RJ/ES" -> "Campo Grande - MS" [label=300 color=black constraint=false dir=none]
-	"Cuiaba - MT" -> "Posto - MT/GO" [color=red constraint=false]
-	"Posto - MT/GO" -> "Goiania - GO" [color=red constraint=false]
-	"Goiania - GO" -> "Posto - GO/MG" [color=red constraint=false]
-	"Posto - GO/MG" -> "Belo Horizonte - MG" [color=red constraint=false]
-	"Belo Horizonte - MG" -> "Vitoria - ES" [label=2323 color=red constraint=true]
+	"Cuiaba - MT" -> "Posto - MT/MS" [color=red constraint=false]
+	"Posto - MT/MS" -> "Campo Grande - MS" [color=red constraint=false]
+	"Campo Grande - MS" -> "Posto - MS/SP" [color=red constraint=false]
+	"Posto - MS/SP" -> "Sao Paulo - SP" [label=1910 color=red constraint=true]
 }

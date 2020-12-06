@@ -39,14 +39,8 @@
 <!-- Cuiaba &#45; MT&#45;&gt;Posto &#45; MT/GO -->
 <g id="edge2" class="edge">
 <title>Cuiaba &#45; MT&#45;&gt;Posto &#45; MT/GO</title>
-<path fill="none" stroke="#000000" d="M250.0358,-691.9037C245.0371,-757.8938 240.2219,-863.0733 238.9448,-932.7513"/>
-<text text-anchor="middle" x="233.9903" y="-816.1275" font-family="Times,serif" font-size="14.00" fill="#000000">400</text>
-</g>
-<!-- Cuiaba &#45; MT&#45;&gt;Posto &#45; MT/GO -->
-<g id="edge28" class="edge">
-<title>Cuiaba &#45; MT&#45;&gt;Posto &#45; MT/GO</title>
-<path fill="none" stroke="#ff0000" d="M260.3325,-692.3662C259.4396,-755.4369 255.1892,-853.9508 250.4858,-923.2358"/>
-<polygon fill="#ff0000" stroke="#ff0000" points="246.9925,-923.0193 249.7889,-933.2384 253.9756,-923.5058 246.9925,-923.0193"/>
+<path fill="none" stroke="#000000" d="M255.1654,-692.5523C252.2035,-758.5039 247.5079,-863.0561 244.3887,-932.5073"/>
+<text text-anchor="middle" x="239.2771" y="-816.3298" font-family="Times,serif" font-size="14.00" fill="#000000">400</text>
 </g>
 <!-- Campo Grande &#45; MS -->
 <g id="node4" class="node">
@@ -71,8 +65,14 @@
 <!-- Cuiaba &#45; MT&#45;&gt;Posto &#45; MT/MS -->
 <g id="edge5" class="edge">
 <title>Cuiaba &#45; MT&#45;&gt;Posto &#45; MT/MS</title>
-<path fill="none" stroke="#000000" d="M250.0545,-570.299C241.5809,-504.9714 228.1167,-401.1686 219.15,-332.0391"/>
-<text text-anchor="middle" x="224.1022" y="-454.9691" font-family="Times,serif" font-size="14.00" fill="#000000">505</text>
+<path fill="none" stroke="#000000" d="M255.1652,-569.6361C248.6881,-503.9452 235.2913,-399.9065 224.5074,-331.0135"/>
+<text text-anchor="middle" x="229.3363" y="-454.1248" font-family="Times,serif" font-size="14.00" fill="#000000">505</text>
+</g>
+<!-- Cuiaba &#45; MT&#45;&gt;Posto &#45; MT/MS -->
+<g id="edge28" class="edge">
+<title>Cuiaba &#45; MT&#45;&gt;Posto &#45; MT/MS</title>
+<path fill="none" stroke="#ff0000" d="M244.9438,-570.9619C234.9391,-508.8473 222.1248,-411.4447 214.7551,-342.3894"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="218.2329,-341.9943 213.7082,-332.4142 211.2711,-342.7249 218.2329,-341.9943"/>
 </g>
 <!-- Posto &#45; RJ/ES -->
 <g id="node16" class="node">
@@ -129,26 +129,14 @@
 <!-- Goiania &#45; GO&#45;&gt;Posto &#45; GO/MG -->
 <g id="edge11" class="edge">
 <title>Goiania &#45; GO&#45;&gt;Posto &#45; GO/MG</title>
-<path fill="none" stroke="#000000" d="M697.2513,-896.8531C750.2838,-945.67 838.9438,-1022.6552 897.1093,-1070.4686"/>
-<text text-anchor="middle" x="786.6803" y="-987.4608" font-family="Times,serif" font-size="14.00" fill="#000000">505</text>
-</g>
-<!-- Goiania &#45; GO&#45;&gt;Posto &#45; GO/MG -->
-<g id="edge30" class="edge">
-<title>Goiania &#45; GO&#45;&gt;Posto &#45; GO/MG</title>
-<path fill="none" stroke="#ff0000" d="M703.9192,-889.1641C757.2429,-932.7049 840.6023,-1004.7803 896.392,-1055.4355"/>
-<polygon fill="#ff0000" stroke="#ff0000" points="894.326,-1058.288 904.0752,-1062.4358 899.0405,-1053.1136 894.326,-1058.288"/>
+<path fill="none" stroke="#000000" d="M700.5853,-893.0086C754.9343,-940.1394 843.4563,-1016.9046 900.3316,-1066.2261"/>
+<text text-anchor="middle" x="789.9584" y="-983.4174" font-family="Times,serif" font-size="14.00" fill="#000000">505</text>
 </g>
 <!-- Posto &#45; MT/GO&#45;&gt;Goiania &#45; GO -->
 <g id="edge3" class="edge">
 <title>Posto &#45; MT/GO&#45;&gt;Goiania &#45; GO</title>
-<path fill="none" stroke="#000000" d="M309.5535,-983.8908C389.5013,-956.7168 520.3998,-908.2455 595.3238,-878.0065"/>
-<text text-anchor="middle" x="441.9386" y="-934.7487" font-family="Times,serif" font-size="14.00" fill="#000000">505</text>
-</g>
-<!-- Posto &#45; MT/GO&#45;&gt;Goiania &#45; GO -->
-<g id="edge29" class="edge">
-<title>Posto &#45; MT/GO&#45;&gt;Goiania &#45; GO</title>
-<path fill="none" stroke="#ff0000" d="M305.9973,-974.2716C381.1799,-944.1923 504.6916,-898.5094 582.2318,-872.0852"/>
-<polygon fill="#ff0000" stroke="#ff0000" points="583.5728,-875.3264 591.9213,-868.8032 581.327,-868.6964 583.5728,-875.3264"/>
+<path fill="none" stroke="#000000" d="M307.7754,-979.0812C386.8347,-949.8534 517.4964,-901.5483 593.2957,-873.5257"/>
+<text text-anchor="middle" x="440.0356" y="-930.1034" font-family="Times,serif" font-size="14.00" fill="#000000">505</text>
 </g>
 <!-- Sao Paulo &#45; SP -->
 <g id="node9" class="node">
@@ -173,14 +161,26 @@
 <!-- Campo Grande &#45; MS&#45;&gt;Posto &#45; MS/SP -->
 <g id="edge14" class="edge">
 <title>Campo Grande &#45; MS&#45;&gt;Posto &#45; MS/SP</title>
-<path fill="none" stroke="#000000" d="M601.4477,-380.1605C651.3679,-325.7324 720.9007,-249.9209 766.2285,-200.5"/>
-<text text-anchor="middle" x="673.3381" y="-294.1302" font-family="Times,serif" font-size="14.00" fill="#000000">505</text>
+<path fill="none" stroke="#000000" d="M605.3325,-384.4025C656.5092,-330.8504 726.328,-254.4653 770.3711,-203.6759"/>
+<text text-anchor="middle" x="677.3518" y="-297.8392" font-family="Times,serif" font-size="14.00" fill="#000000">505</text>
+</g>
+<!-- Campo Grande &#45; MS&#45;&gt;Posto &#45; MS/SP -->
+<g id="edge30" class="edge">
+<title>Campo Grande &#45; MS&#45;&gt;Posto &#45; MS/SP</title>
+<path fill="none" stroke="#ff0000" d="M596.8864,-376.656C643.436,-323.7668 709.1119,-252.2928 755.69,-203.9097"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="758.276,-206.2704 762.7071,-196.6467 753.2417,-201.4066 758.276,-206.2704"/>
 </g>
 <!-- Posto &#45; MT/MS&#45;&gt;Campo Grande &#45; MS -->
 <g id="edge6" class="edge">
 <title>Posto &#45; MT/MS&#45;&gt;Campo Grande &#45; MS</title>
-<path fill="none" stroke="#000000" d="M272.4765,-296.0087C326.2865,-326.2578 404.1629,-370.0358 462.1113,-402.6113"/>
-<text text-anchor="middle" x="356.7939" y="-353.11" font-family="Times,serif" font-size="14.00" fill="#000000">300</text>
+<path fill="none" stroke="#000000" d="M269.819,-300.7361C322.8366,-332.3948 400.6449,-376.294 459.2494,-407.7023"/>
+<text text-anchor="middle" x="354.0342" y="-358.0192" font-family="Times,serif" font-size="14.00" fill="#000000">300</text>
+</g>
+<!-- Posto &#45; MT/MS&#45;&gt;Campo Grande &#45; MS -->
+<g id="edge29" class="edge">
+<title>Posto &#45; MT/MS&#45;&gt;Campo Grande &#45; MS</title>
+<path fill="none" stroke="#ff0000" d="M275.134,-291.2813C326.9636,-318.6563 399.8249,-359.382 456.0911,-392.3064"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="454.5774,-395.4763 464.9732,-397.5204 458.1211,-389.4395 454.5774,-395.4763"/>
 </g>
 <!-- Posto &#45; GO/MS&#45;&gt;Campo Grande &#45; MS -->
 <g id="edge9" class="edge">
@@ -198,15 +198,8 @@
 <!-- Belo Horizonte &#45; MG&#45;&gt;Vitoria &#45; ES -->
 <g id="edge22" class="edge">
 <title>Belo Horizonte &#45; MG&#45;&gt;Vitoria &#45; ES</title>
-<path fill="none" stroke="#000000" d="M1309.958,-819.0426C1396.8448,-804.4711 1525.4204,-779.9016 1598.503,-763.6894"/>
-<text text-anchor="middle" x="1443.7305" y="-795.166" font-family="Times,serif" font-size="14.00" fill="#000000">523</text>
-</g>
-<!-- Belo Horizonte &#45; MG&#45;&gt;Vitoria &#45; ES -->
-<g id="edge32" class="edge">
-<title>Belo Horizonte &#45; MG&#45;&gt;Vitoria &#45; ES</title>
-<path fill="none" stroke="#ff0000" d="M1307.8882,-808.0838C1390.2311,-790.7747 1511.3082,-768.0871 1586.4549,-756.012"/>
-<polygon fill="#ff0000" stroke="#ff0000" points="1587.4163,-759.4034 1596.7447,-754.3803 1586.3199,-752.4898 1587.4163,-759.4034"/>
-<text text-anchor="middle" x="1433.1715" y="-770.8479" font-family="Times,serif" font-size="14.00" fill="#000000">2323</text>
+<path fill="none" stroke="#000000" d="M1309.1865,-813.5135C1395.7634,-797.1612 1524.2601,-772.8914 1597.6955,-759.0213"/>
+<text text-anchor="middle" x="1442.941" y="-790.0674" font-family="Times,serif" font-size="14.00" fill="#000000">523</text>
 </g>
 <!-- Posto &#45; MG/ES -->
 <g id="node15" class="node">
@@ -224,14 +217,8 @@
 <!-- Posto &#45; GO/MG&#45;&gt;Belo Horizonte &#45; MG -->
 <g id="edge12" class="edge">
 <title>Posto &#45; GO/MG&#45;&gt;Belo Horizonte &#45; MG</title>
-<path fill="none" stroke="#000000" d="M1007.3933,-1064.7246C1051.9807,-1019.5815 1115.6528,-951.8481 1161.62,-900.7862"/>
-<text text-anchor="middle" x="1074.0066" y="-986.5554" font-family="Times,serif" font-size="14.00" fill="#000000">390</text>
-</g>
-<!-- Posto &#45; GO/MG&#45;&gt;Belo Horizonte &#45; MG -->
-<g id="edge31" class="edge">
-<title>Posto &#45; GO/MG&#45;&gt;Belo Horizonte &#45; MG</title>
-<path fill="none" stroke="#ff0000" d="M999.5475,-1057.3728C1039.6413,-1012.2633 1099.0086,-948.5965 1145.9901,-900.1591"/>
-<polygon fill="#ff0000" stroke="#ff0000" points="1148.6604,-902.4336 1153.1232,-892.8245 1143.6422,-897.5532 1148.6604,-902.4336"/>
+<path fill="none" stroke="#000000" d="M1003.7799,-1060.7184C1047.0372,-1014.5542 1110.2088,-947.1375 1157.0313,-897.1686"/>
+<text text-anchor="middle" x="1069.9056" y="-982.7435" font-family="Times,serif" font-size="14.00" fill="#000000">390</text>
 </g>
 <!-- Sao Paulo &#45; SP&#45;&gt;Belo Horizonte &#45; MG -->
 <g id="edge19" class="edge">
@@ -281,8 +268,15 @@
 <!-- Posto &#45; MS/SP&#45;&gt;Sao Paulo &#45; SP -->
 <g id="edge15" class="edge">
 <title>Posto &#45; MS/SP&#45;&gt;Sao Paulo &#45; SP</title>
-<path fill="none" stroke="#000000" d="M869.2305,-186.8566C929.0323,-225.1385 1022.483,-284.9606 1082.3484,-323.2832"/>
-<text text-anchor="middle" x="965.2894" y="-258.8699" font-family="Times,serif" font-size="14.00" fill="#000000">600</text>
+<path fill="none" stroke="#000000" d="M866.3909,-191.2924C925.2175,-231.2995 1018.8635,-291.2452 1079.7855,-327.892"/>
+<text text-anchor="middle" x="962.5882" y="-263.3922" font-family="Times,serif" font-size="14.00" fill="#000000">600</text>
+</g>
+<!-- Posto &#45; MS/SP&#45;&gt;Sao Paulo &#45; SP -->
+<g id="edge31" class="edge">
+<title>Posto &#45; MS/SP&#45;&gt;Sao Paulo &#45; SP</title>
+<path fill="none" stroke="#ff0000" d="M872.0701,-182.4208C930.1728,-217.3757 1017.9677,-273.4736 1076.9713,-313.2764"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="1075.2184,-316.3164 1085.4609,-319.0263 1079.1438,-310.5206 1075.2184,-316.3164"/>
+<text text-anchor="middle" x="960.5207" y="-236.6486" font-family="Times,serif" font-size="14.00" fill="#000000">1910</text>
 </g>
 <!-- Rio de Janeiro &#45; RJ&#45;&gt;Vitoria &#45; ES -->
 <g id="edge25" class="edge">
