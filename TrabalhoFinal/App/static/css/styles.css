@@ -145,7 +145,8 @@ span{
 }
 
 .containerhome #btn{
-    width: 85px;
+    margin-top: 25px;
+    width: 130px;
 }
 
 button{

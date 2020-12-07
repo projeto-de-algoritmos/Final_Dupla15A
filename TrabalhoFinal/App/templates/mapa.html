@@ -1,4 +1,5 @@
 {% load static %}
+{{mensagem}}
 
 <!DOCTYPE html>    
 <html>    
@@ -22,6 +23,11 @@
                     
             </div>
             <div id="caixa_direita">
+                <p>
+                {% if athlete_list %}
+                    {{mensagem}}
+                {% endif %}
+                </p>
                 <img src="{% static 'img/mapa_resultado.svg'%}" width="100%" height="100%"/>
             </div>
         </div>
