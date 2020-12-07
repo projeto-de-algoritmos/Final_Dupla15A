@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>    
+<html>    
+    <head>   
+        
+        <title>Final</title>    
+        <link href="{% static 'css/styles.css'%}" rel="stylesheet">   
+    </head>    
+    <body> 
+        <div class="cabecalho">
+            <h1>Seja Bem-vindo!</h1>
+            <!-- <h3>
+               O menor caminho para o seu trajeto foi gerado.
+            </h3> -->
+
+        </div>
+        <div class="containerhome" >
+            <h4>A aplicação utiliza grafos e algoritmos de programação dinamica para gerar as rotas!</h4>
+            <a id="btn" href="http://localhost:8000/search/">
+                <button>Iniciar</button>
+             </a>
+    
+        </div>
+    </body>    
+</html> 
+<!-- virtualenv --python=/usr/bin/python3.6 env -->

@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>    
+<html>    
+    <head>   
+        
+        <title>Final</title>    
+        <link href="{% static 'css/styles.css'%}" rel="stylesheet">   
+    </head>    
+    <body> 
+        <div class="cabecalho">
+            <h1>Melhor caminho</h1>
+            <!-- <h3>
+               O menor caminho para o seu trajeto foi gerado.
+            </h3> -->
+
+        </div>
+        <div class="container">
+            <div id="caixa_esquerda">
+                <h2>O menor caminho para o seu trajeto foi gerado.</h2>
+               
+                    
+            </div>
+            <div id="caixa_direita">
+                <img src="{% static 'img/mapa_resultado.svg'%}" width="100%" height="100%"/>
+            </div>
+        </div>
+    </body>    
+</html> 
