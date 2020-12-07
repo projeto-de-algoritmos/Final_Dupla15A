@@ -8,6 +8,7 @@ def home(request):
 
 
 def index(request):
+    
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
         form = Formulario(request.POST or None)
@@ -24,9 +25,14 @@ def index(request):
             print(form['partida'].value())
             print(form['destino'].value())
             print(form['autonomia'].value())
-            menu(inicio,final,autonomia)
+            try:
+                menu(inicio,final,autonomia)
+                return HttpResponseRedirect('path/')
             
-            return HttpResponseRedirect('path/')
+            except :
+                return HttpResponseRedirect('error/')
+            
+            
             
 
     # if a GET (or any other method) we'll create a blank form 
@@ -38,3 +44,6 @@ def index(request):
 
 def path_result(request):
     return render(request, 'mapa.html', {})
+
+def error(request):
+    return render(request, 'error.html', {})
