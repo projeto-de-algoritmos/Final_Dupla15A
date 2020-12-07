@@ -5,6 +5,7 @@ from TrabalhoFinal.functions.Graph import Grafo
 import time
 
 
+
 def criar_mapa():
     qtd_cidade = 0
     while(qtd_cidade <= 0):
@@ -65,6 +66,7 @@ def bellman(graph, raiz, tanque):
     fila = PriorityQueue()  
     caminho = {}  
     autonomia = {}
+    semCombustivel = {}
 
     for v in graph.vertices():
         if v == raiz:
@@ -118,6 +120,18 @@ def bellman(graph, raiz, tanque):
 
                 print("FICOU SEM COMBUSTIVEL, A AUTONOMIA DO SEU VEICULO É INCOPATIVEL PARA ESSE TIPO DE VIAGEM.")
                 
+                if du + w < dv:  
+
+                    # print("IF: ", autonomia[v])
+
+                    caminho[v][1] = 999999 
+                    caminho[v][0] = caminho[u][0] + [u]  
+                    fila.queue.remove((dv, v)) 
+                    fila.put((caminho[v][1], v))
+                    autonomia[v] = autonomia[u] - w
+
+                    # if 'Posto' in str(v):
+                    autonomia[v] = 0
 
 
             #     if du + w < dv and 'Posto' in str(v):  
@@ -151,7 +165,7 @@ def bellman(graph, raiz, tanque):
 
 def imagem_mapa(e, opcao,listCaminho,distanciaTotal,nome_mapa):
     mapa = Digraph(nome_mapa, filename=nome_mapa, node_attr={'color': 'lightblue2'}, engine='sfdp')
-    mapa.attr(size='100', shape='ellipse', fontsize='10', rankdir='LR')
+    mapa.attr(size='80', shape='ellipse', fontsize='20', rankdir='LR')
     mapa.attr('node', shape='doublecircle')
 
     for i in e:
@@ -195,10 +209,25 @@ def busca_caminho(partida, parada, mapa, tanque):
         # distance = dijkstra(g, partida)
         distance = bellman(g, partida, tanque)
 
-        visitados.append(partida)
-        partida = i
-        caminhoPercorrido.append(distance[i][0])
-        distanciaTotal += int(distance[i][1])
+        print("Distancia: ", distance)
+
+        if int(distance[i][1]) >= 999999:
+
+            # visitados.append(partida)
+            # partida = i
+            # caminhoPercorrido.append(distance[i][0])
+            visitados = [str(partida)]
+            # string = ["Impossivel"]
+            caminhoPercorrido.append(visitados)
+
+            distanciaTotal = "FICOU SEM COMBUSTIVEL, A AUTONOMIA DO SEU VEICULO É INCOPATIVEL PARA ESSE TIPO DE VIAGEM."
+
+
+        else:
+            visitados.append(partida)
+            partida = i
+            caminhoPercorrido.append(distance[i][0])
+            distanciaTotal += int(distance[i][1])
     
     visitados.append(partida)
     caminhoPercorrido.append(parada[-1:])
@@ -208,13 +237,20 @@ def busca_caminho(partida, parada, mapa, tanque):
 
     listCaminho = []
     for g in caminhoPercorrido:
-        for h in g:
+        for h in g:   
             listCaminho.append(h)
             print("\n caminhoPercorrido lista: ", h)
     
     print(listCaminho)
 
+    if listCaminho.count(partida) >= 2:
+        print("ERROR")
+        return -1
+        # listCaminho.pop(0)
+
     imagem_mapa(mapa,1,listCaminho,distanciaTotal,"./App/static/img/mapa_resultado")
+    return 0
+
 
 
     
@@ -264,3 +300,31 @@ def prim(graph, raiz):
     caminho = a 
     
     return caminho, peso
+
+def busca_caminho_dijkstra(partida, parada, mapa):
+    g = Grafo({})
+    for e in mapa:
+        g.adiciona_arestas(*e)
+    
+    distanciaTotal = 0
+    visitados = []
+    caminhoPercorrido = []
+    for i in parada:
+        distance = dijkstra(g, partida)
+        visitados.append(partida)
+        partida = i
+        caminhoPercorrido.append(distance[i][0])
+        distanciaTotal += int(distance[i][1])
+    
+    visitados.append(partida)
+    caminhoPercorrido.append(parada[-1:])
+
+
+    listCaminho = []
+    for g in caminhoPercorrido:
+        for h in g:
+            listCaminho.append(h)
+    
+    print(listCaminho)
+
+    imagem_mapa(mapa,1,listCaminho,distanciaTotal,"./App/static/img/mapa_resultado")
