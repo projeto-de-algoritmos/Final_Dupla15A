@@ -51,7 +51,7 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 
 ## Uso 
-[Instruções em video]()
+[Instruções em video](https://www.dropbox.com/s/77zfmt042jmrsft/projalgoritmos%20on%202020-12-08%2002-44.mp4?dl=0)
 
 - Crie uma ambiente virtual.
 
