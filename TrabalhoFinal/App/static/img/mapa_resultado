@@ -13,7 +13,5 @@ digraph "./App/static/img/mapa_resultado" {
 	"Rio de Janeiro - RJ" -> "Vitoria - ES" [label=527 color=black constraint=false dir=none]
 	"Cuiaba - MT" -> "Campo Grande - MS" [color=red constraint=false]
 	"Campo Grande - MS" -> "Sao Paulo - SP" [color=red constraint=false]
-	"Sao Paulo - SP" -> "Belo Horizonte - MG" [color=red constraint=false]
-	"Belo Horizonte - MG" -> "Sao Paulo - SP" [color=red constraint=false]
-	"Sao Paulo - SP" -> "Rio de Janeiro - RJ" [label=3345 color=red constraint=true]
+	"Sao Paulo - SP" -> "Rio de Janeiro - RJ" [label=2161 color=red constraint=true]
 }

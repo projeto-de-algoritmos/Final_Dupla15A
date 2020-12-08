@@ -73,36 +73,34 @@ edges = [   ('Cuiaba - MT', 'Goiania - GO', 895),
             
             ('Posto - RJ/ES', 'Vitoria - ES', 252)]
 
-edges2 = [   ('Cuiaba - MT', 'Goiania - GO', 895), 
+edges2 = [  ('Cuiaba - MT', 'Goiania - GO', 895), 
+            
             ('Cuiaba - MT', 'Campo Grande - MS', 707),
 
             ('Goiania - GO', 'Campo Grande - MS', 846), 
+            
             ('Goiania - GO', 'Belo Horizonte - MG', 890), 
 
             ('Campo Grande - MS', 'Sao Paulo - SP', 1013), 
 
             ('Sao Paulo - SP', 'Rio de Janeiro - RJ', 441), 
+            
             ('Sao Paulo - SP', 'Belo Horizonte - MG', 592), 
 
             ('Belo Horizonte - MG', 'Vitoria - ES', 523), 
 
             ('Rio de Janeiro - RJ', 'Vitoria - ES', 527)]
 
-
 def menu(op,inicio,final,arg3):
- 
     if(op == 0):
         mapa = edges
         cidades(mapa)
         status = busca_caminho(inicio,[final],mapa, int(arg3))
         if(status == -1):
             return -1
-
     else:
         mapa = edges2
         cidades(mapa)
         busca_caminho_dijkstra(inicio,final,mapa)
     
     return 0
-
-    # print("\tAté mais....")

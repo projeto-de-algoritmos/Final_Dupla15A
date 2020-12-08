@@ -57,12 +57,6 @@ def dijkstra(graph, raiz):
 
 def bellman(graph, raiz, tanque):
     
-    # autonomia = 700
-    # tanque = 700
-    # Pseudo-codigo: https://www.programiz.com/dsa/bellman-ford-algorithm
-
-    print("ALGORITMO BELLMAN")
-
     fila = PriorityQueue()  
     caminho = {}  
     autonomia = {}
@@ -82,14 +76,6 @@ def bellman(graph, raiz, tanque):
 
         fila.put((caminho[v][1], v))  
 
-    # vertices_restantes = list(graph.vertices()) 
-
-    # for cada_vertice in graph.vertices():
-
-        # u = fila.get()[1]  
-        # vertices_restantes.remove(u) 
-
-    # for node in range(self.node_cnt) :
     for i in range(len(graph.vertices())):
         u = fila.get()[1]  
 
@@ -97,23 +83,16 @@ def bellman(graph, raiz, tanque):
             du = caminho[u][1] 
             w = graph.custo(u, v) 
             dv = caminho[v][1]  
-            print("Vertice u: ", u, " ---- Vertices v: ", v, " ---- Custo: ", w, " ---- Autonomia: ", autonomia[u])
-            # print("Autonomia: ", autonomia)
-            # print("Autonomia v: ", autonomia[v])
 
             if autonomia[u] >= w:
 
                 if du + w < dv:  
-
-                    # print("IF: ", autonomia[v])
 
                     caminho[v][1] = du + w  
                     caminho[v][0] = caminho[u][0] + [u]  
                     fila.queue.remove((dv, v)) 
                     fila.put((caminho[v][1], v))
                     autonomia[v] = autonomia[u] - w
-
-                    # if 'Posto' in str(v):
                     autonomia[v] = tanque
     
             else:
@@ -122,45 +101,22 @@ def bellman(graph, raiz, tanque):
                 
                 if du + w < dv:  
 
-                    # print("IF: ", autonomia[v])
-
                     caminho[v][1] = 999999 
                     caminho[v][0] = caminho[u][0] + [u]  
                     fila.queue.remove((dv, v)) 
                     fila.put((caminho[v][1], v))
                     autonomia[v] = autonomia[u] - w
-
-                    # if 'Posto' in str(v):
                     autonomia[v] = 0
 
-
-            #     if du + w < dv and 'Posto' in str(v):  
-
-            #         # print("Else: ", autonomia)
-            #         caminho[v][1] = du + w  
-            #         caminho[v][0] = caminho[u][0] + [u]  
-            #         fila.queue.remove((dv, v)) 
-            #         fila.put((caminho[v][1], v))
-
-            #         autonomia[v] = tanque
-
-        print("\n--- Autonomia --- ", autonomia)
-        print(" --- Caminho loop: ---", caminho)
-
     for v in list(graph.vertices()):  
+        
         du = caminho[u][1] 
         w = graph.custo(u, v) 
         dv = caminho[v][1]  
         if du + w < dv:  
-            print("Contem ciclos negativos.")
+            # Contem ciclos negativos.
             return -1
 
-            # caminho[v][1] = du + w  
-            # caminho[v][0] = caminho[u][0] + [u]  
-            # fila.queue.remove((dv, v)) 
-            # fila.put((caminho[v][1], v))
-
-    print("Caminho: ", caminho)
     return caminho
 
 def imagem_mapa(e, opcao,listCaminho,distanciaTotal,nome_mapa):
@@ -185,11 +141,9 @@ def imagem_mapa(e, opcao,listCaminho,distanciaTotal,nome_mapa):
     
     print("Mapa está sendo gerado aguarde...")
     time.sleep(3)
-    # input("Precione enter para continuar: ")
     
-
 def busca_caminho(partida, parada, mapa, tanque):
-    print("Busca caminho")
+
     g = Grafo({})
     for e in mapa:
         g.adiciona_arestas(*e)
@@ -198,30 +152,16 @@ def busca_caminho(partida, parada, mapa, tanque):
     visitados = []
     caminhoPercorrido = []
     for i in parada:
-        print("Grafo: ", g, " Parada: ", partida)
-        print("Grafo vertice: ", g.vertices(), " SIZE: ", len(g.vertices()))
-        print("Grafo arestas: ", g.arestas(), " SIZE: ", len(g.vertices()))
-
-        for aresta in g.arestas():
-            print("Aresta: ", aresta)
-            print("Aresta src: ", aresta[0])
-
-        # distance = dijkstra(g, partida)
+    
         distance = bellman(g, partida, tanque)
 
         print("Distancia: ", distance)
 
         if int(distance[i][1]) >= 999999:
 
-            # visitados.append(partida)
-            # partida = i
-            # caminhoPercorrido.append(distance[i][0])
             visitados = [str(partida)]
-            # string = ["Impossivel"]
             caminhoPercorrido.append(visitados)
-
             distanciaTotal = "FICOU SEM COMBUSTIVEL, A AUTONOMIA DO SEU VEICULO É INCOPATIVEL PARA ESSE TIPO DE VIAGEM."
-
 
         else:
             visitados.append(partida)
@@ -246,13 +186,9 @@ def busca_caminho(partida, parada, mapa, tanque):
     if listCaminho.count(partida) >= 2:
         print("ERROR")
         return -1
-        # listCaminho.pop(0)
 
     imagem_mapa(mapa,1,listCaminho,distanciaTotal,"./App/static/img/mapa_resultado")
     return 0
-
-
-
     
 def cidades(mapa):
     print("Cidades Cadastradas ")
@@ -318,9 +254,8 @@ def busca_caminho_dijkstra(partida, parada, mapa):
     
     visitados.append(partida)
     caminhoPercorrido.append(parada[-1:])
-
-
     listCaminho = []
+
     for g in caminhoPercorrido:
         for h in g:
             listCaminho.append(h)
